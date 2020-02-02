@@ -1,0 +1,115 @@
+<!--code by szl -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+<link rel="stylesheet" href="css/main.css" type="text/css" media="screen, projection" /> <!-- 主要css样式 -->
+
+<!--[if lt IE 9]>
+	<link rel="stylesheet" type="text/css" href="css/ie8.css" />
+<![endif]-->
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/custom-scripts.js"></script>
+
+<script type="text/javascript">
+
+
+$(window).load(function(){
+
+
+	rotate();
+    manRun();
+	manTalk();
+
+});
+$(document).ready(function(){
+//气泡
+	$("div.bubble-options p.man-bubble").each(function(){
+maxtalk++;
+    });
+	});
+	//立即进入按钮函数
+	function goin(){
+		window.location='main.htm';
+		}
+		//立即进入按钮选中样式
+function	goto(){
+		document.getElementById('gotoico').style.background='url(images/goto1.png) no-repeat';
+		document.getElementById('gotow').style.color='#66BB5E';
+
+		}
+		function	goout(){
+		document.getElementById('gotoico').style.background='url(images/goto.png) no-repeat';
+		document.getElementById('gotow').style.color='#5891AA';
+
+		}
+
+</script>
+
+
+<title>守护天下第一滩</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
+
+<body>
+
+<div class="top-menu">
+	<a href="#" title="中文页面">中</a> | <a href="en_index.htm" title="英文页面">英</a>
+</div><div class="graphic"><div style="font-size:60px;">守护天下第一滩</div>
+	  <div  style="z-index:999999;"><div class="goto"  onmousemove="goto()"; onmouseout="goout()" onclick="goin()"><div id="gotoico" ></div><div id="gotow" >北海银滩</div></div></div>
+  </div>
+<div id="wrapper">
+
+
+
+
+
+<div class="man-wrapper">
+<!-- 人物行走 -->
+	<div class="man"></div>
+<!--  人物行走-->
+
+<!--气泡-->
+	<div class="man-bubble">
+
+    </div>
+
+    <!-- 轮流显示气泡 -->
+    <div class="bubble-options">
+    	    <p class="man-bubble">
+        	赶快点击“北海银滩”进入查看吧<br />精彩内容等着你！<br />
+        </p>
+
+<p class="man-bubble">
+守卫清清绿水，力争文明人。<br />
+      保护水资源，生命真永远。
+        </p>
+          <p class="man-bubble">
+        	赶快点击“北海银滩”进入查看吧<br />精彩内容等着你！<br />
+        </p>
+     <p class="man-bubble">
+
+珍惜自然资源，共营生命绿色。<br />
+提高环境意识 保护美好家园
+        </p>
+          <p class="man-bubble">
+        	赶快点击“北海银滩”进入查看吧<br />精彩内容等着你！<br />
+        </p>
+     <p class="man-bubble">
+
+青山清我目、流水静我耳 <br />
+      尊崇自然、敬畏生命 <br />
+      赞化天地、道法自然
+        </p>
+    </div>
+    <!-- 轮流显示气泡 -->
+
+</div>
+
+<!-- 旋转的地球-->
+	<div class="planet"></div>
+<!-- 旋转的地球-->
+</div>
+
+
+</body>
+</html>

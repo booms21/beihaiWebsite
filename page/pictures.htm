@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>图集</title>
+	<link rel="stylesheet" href="../css/style.css" type="text/css">
+    <link href="../fancybox/jquery.fancybox-1.3.4.css" rel="stylesheet" />
+</head>
+<body>
+	<div class="border">
+		
+		<div class="page">
+			
+			<div class="body">
+			  <div class="pictures"  style="height:auto;">
+				<h2>图集</h2>
+                <div>
+				<ul >
+                
+					<h3><span></span></h3>
+				
+						<li>
+							<a href="../images/a15.jpg" title="海洋垃圾对海洋生物造成的危害"><img src="../images/a15.jpg"  id="haof"></a> <span>海洋垃圾对海洋生物造成的危害</span>
+						</li>
+                        	<li>
+							<a href="../images/a16.jpg" title="堆积海岸的垃圾"><img  src="../images/a16.jpg"  ></a> <span>堆积海岸的垃圾</span>
+						</li>	
+                        	<li>
+							<a href="../images/a13.jpg" title="堆积海岸的垃圾"><img  src="../images/a13.jpg" ></a> <span>堆积海岸的垃圾</span>
+						</li>
+                          	<li>
+							<a href="../images/56279742_1.jpg" title="漓江山水"> <img src="../images/56279742_1.jpg" ></a> <span>漓江山水</span>
+						</li>	
+                    
+					     	<li>
+							<a href="../images/56279742_11.jpg" title="九龙瀑布森林公园"><img src="../images/56279742_11.jpg" ></a> <span>九龙瀑布森林公园</span>
+						</li>	
+                        	  	<li>
+							<a href="../images/56279742_15.jpg" title="银滩风光"><img src="../images/56279742_15.jpg"  ></a> <span>银滩风光</span>
+						</li>	
+					  	<li>
+							<a href="../images/56279742_19.jpg" title="涠洲岛"><img src="../images/56279742_19.jpg"  ></a> <span>涠洲岛</span>
+						</li>	
+                          	<li>
+							<a href="../images/56279742_20.jpg" title="涠洲岛"><img src="../images/56279742_20.jpg"  ></a> <span>涠洲岛</span>
+						</li>	
+                       	
+                          	<li>
+							<a href="../images/56279742_22.jpg" title="德天瀑布"><img src="../images/56279742_22.jpg" ></a> <span>德天瀑布</span>
+						</li>	
+                          	
+                          	<li>
+							<a href="../images/56279742_24.jpg" title="德天瀑布"><img src="../images/56279742_24.jpg" ></a> <span>德天瀑布</span>
+						</li>
+			    </ul>
+				</div>
+                	</div>
+			</div>
+		</div>
+	</div>
+</body>
+   <script src="../js/jquery-1.10.2.min.js"></script>
+ 
+  
+    <script src="../fancybox/jquery.fancybox-1.3.4.js"></script>
+    <script type="text/javascript">
+
+    
+	$(".pictures a").attr('rel', 'gallery_slides').fancybox({
+	
+		'cyclic': true,
+		'transitionIn': 'elastic',
+		'transitionOut': 'elastic',
+		'titleShow': true,
+		'titlePosition': 'over',
+		'overlayColor': '#000',
+		'overlayOpacity': 0.7,
+		 'titleFormat'    : function(title, currentArray, currentIndex, currentOpts) { 
+                    return '<span id="fancybox-title-over">' + (currentIndex + 1) + 
+ ' / ' + currentArray.length + '<strong>'+(title.length ? '   ' + title : '') + '</strong></span>'; 
+                } 
+	});
+
+  </script>
+</html>

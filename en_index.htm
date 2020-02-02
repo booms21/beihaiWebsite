@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<link rel="stylesheet" href="css/main.css" type="text/css" media="screen, projection" /> <!-- 主要css样式 -->
+
+<!--[if lt IE 9]>
+	<link rel="stylesheet" type="text/css" href="css/ie8.css" />
+<![endif]-->
+
+<script type="text/javascript" src="js/jquery.min.js"></script> 
+<script type="text/javascript" src="js/custom-scripts.js"></script>
+
+<script type="text/javascript">
+
+
+$(window).load(function(){
+
+	
+	rotate();
+    manRun();
+	manTalk();
+					   
+});
+$(document).ready(function(){
+//气泡
+	$("div.bubble-options p.man-bubble").each(function(){
+maxtalk++;
+    });		
+	});	
+	//立即进入按钮函数
+	function goin(){
+		window.location='en_main.htm';
+		}
+		//立即进入按钮选中样式
+function	goto(){
+		document.getElementById('gotoico').style.background='url(images/goto1.png) no-repeat';
+		document.getElementById('gotow').style.color='#66BB5E';
+		
+		}
+		function	goout(){
+		document.getElementById('gotoico').style.background='url(images/goto.png) no-repeat';
+		document.getElementById('gotow').style.color='#5891AA';
+		
+		}
+		
+</script>
+
+
+<title>The best in all the land of beach</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
+
+<body>
+
+<div class="top-menu">
+	<a href="index.htm" title="Chinese page">CN</a> | <a href="#" title="English page">EN</a> 
+</div><div class="graphic" style="left:22%;"><div style="font-size:50px; 	">The best in all the land of beach</div>
+	  <div  style="z-index:999999;"><div class="goto"  onmousemove="goto()"; onmouseout="goout()" onclick="goin()"><div id="gotoico" ></div><div id="gotow" >Silver Beach</div></div></div>
+  </div>
+<div id="wrapper">
+
+<!-- 404 graphic -->
+	
+
+
+<div class="man-wrapper">
+<!-- 人物行走 -->
+	<div class="man"></div>
+<!--  人物行走-->
+	
+<!--气泡-->
+	<div class="man-bubble">
+    	
+    </div>
+    
+    <!-- 轮流显示气泡 -->
+    <div class="bubble-options">
+    	    <p class="man-bubble">
+        	Click 'Silver Beach' to view it <br />Wonderful content waiting for you!<br />
+        </p>
+
+<p class="man-bubble">
+Guard the clear water,Be a civilized man.<br />
+  Protect water resources, life is always beautiful.
+        </p>
+          <p class="man-bubble">
+        	Click 'Silver Beach' to view it <br />Wonderful content waiting for you!<br />
+        </p>
+     <p class="man-bubble">
+        	
+Cherish the natural resources, together build of life green.<br />
+Improve environmental awareness to protect a better home.
+        </p>
+          <p class="man-bubble">
+        		Click 'Silver Beach' to view it <br />Wonderful content waiting for you!<br />
+        </p>
+     <p class="man-bubble">
+My eyes, Castle Peak clear water static my ear <br /> 
+     Respect for nature, reverence for life <br />
+    
+Praise the world, imitation of nature
+        </p>
+    </div>
+    <!-- 轮流显示气泡 -->
+
+</div>
+
+<!-- 旋转的地球-->
+	<div class="planet"></div>
+<!-- 旋转的地球-->
+</div>
+
+
+</body>
+</html>

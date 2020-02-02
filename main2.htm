@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<link rel="stylesheet" href="css/main.css" type="text/css" media="screen, projection" />
+<style type="text/css">
+</style>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title >守卫清清绿水-力争文明人</title>
+</head>
+<link rel="Shortcut Icon" href="favicon.ico" type="image/x-icon">
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/control.js"></script>
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+		//显示加载图标
+	universalPreloader();
+
+});
+
+//返回首页按钮选中样式
+	function btnm(){
+		document.getElementById('title').style.color='#69EFCA';
+		document.getElementById('backhico').style.background='url(images/backh.png) no-repeat';
+		}
+
+			function btno(){
+		document.getElementById('title').style.color='#70CBF6';
+		document.getElementById('backhico').style.background='url(images/backh1.png) no-repeat';
+		}
+</script>
+<body>
+
+<!-- Universal preloader -->
+<div id="universal-preloader">
+    <div class="preloader">
+        <img src="images/universal-preloader.gif" alt="universal-preloader" class="universal-preloader-preloader" />
+    </div>
+</div>
+<!-- Universal preloader -->
+
+<div class="border" id="brr" >
+<!-- 左侧导航 -->
+ <div class="page" style=" height:100%; width:18%; float:left;">
+     <div id="title" onmousemove="btnm()" onmouseout="btno()" onclick="backh()"  style="width:90px;"><div id="backhico" ></div><div>返回首页</div></div>
+              <div class="sidebar">
+
+                  <ul>
+                   <li id="st1"  onclick="sed(this)" class="selected">
+                          <a id="list1" href="page/harm.htm" target="right" >受到危害的水源环境</a>
+                      </li>
+                      <li id="st2"   onclick="sed(this)">
+                          <a id="list2"  href="page/yintan.htm" target="right" >与你同行，还净海滩</a>
+                      </li>
+
+                          <li id="st3"  onclick="sed(this)">
+                          <a id="list3" href="page/paper.htm" target="right">环保手抄报</a>
+                      </li>
+
+                           <li id="st4"  onclick="sed(this)">
+                          <a id="list4" href="page/yangshuo.htm" target="right">清清漓江水 环保阳朔人</a>
+                      </li>
+                      <li id="st5"   onclick="sed(this)" >
+                          <a id="list5"  href="page/guilin.htm" target="right" >让桂林明天更美丽</a>
+                      </li>
+
+                       <li id="st6"  onclick="sed(this)">
+                          <a id="list6" href="page/pictures.htm" target="right">图集</a>
+                      </li>
+                       <li id="st7"  onclick="sed(this)">
+                          <a href="more.htm" target="right">更多环保内容</a>
+                      </li >
+                      <li id="st8" onclick="sed(this)">
+                          <a href="about.htm" target="right">关于我们</a>
+                      </li>
+</ul>
+   </div>
+ </div>
+ <!-- 左侧导航结束 -->
+
+
+    <!-- 右侧框架 -->
+<div class="iframeblok" >
+<iframe   name="right" id="rightMain" src="page/harm.htm"  frameborder="0"  width="100%" height="100%" allowtransparency="true">
+</iframe>
+</div>
+<!-- 右侧框架结束 -->
+
+
+</div>
+  <!-- 底部结束 -->
+ <script type="text/javascript">
+
+ //左侧栏目导航点击样式函数
+var sedvar=document.getElementById("st1");
+  function sed(opit){
+    sedvar.className="";
+	opit.className="selected";
+	sedvar=opit;
+	}
+//回到首页跳转的函数
+		function backh(){
+			window.location='index.htm';
+
+		}
+			universalPreloaderRemove();
+</script>
+
+
+</body>
+</html>
